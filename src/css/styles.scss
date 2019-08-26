@@ -1,0 +1,12 @@
+@import './mixins/allmixins';
+@import './variables/variables';
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
+@import './components/nav';
+@import './components/header';
+@import './components/strategy.scss';
+@import './components/ROI';

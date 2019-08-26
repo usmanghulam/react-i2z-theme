@@ -1,0 +1,165 @@
+.strategy{
+    .row{
+            position: relative;
+            top: 50px;
+            h1{
+                font-size: 7vw;
+                font-weight: bold;
+                font-family: $fontLight;
+                top: 35px;
+                position: relative;
+                left: 30px;
+            }
+            .outsideDiv{
+                overflow:hidden;
+                box-shadow: 10px 10px 20000px lightgrey;
+                z-index: 99 !important;
+                
+            }
+                    // .effectBefore{
+                    //     z-index:99 !important;
+                    // }
+    }       .leftDiv{
+                @include leftDiv;
+             }
+             .rightULDiv{
+                 @include rightULDiv;
+             }
+}
+
+
+@media screen and (max-width: 985px){
+    .strategy{
+        .row{
+                position: relative;
+                top: 0px !important;
+                h1{
+                    font-size: 7vw;
+                    font-weight: bold;
+                    font-family: $fontLight;
+                    top: 35px;
+                    position: relative;
+                    left: 30px;
+                }
+                .outsideDiv{
+                    overflow:hidden;
+                    box-shadow: 10px 10px 20000px lightgrey;
+                    // z-index: 99 !important;
+                    
+                }
+                        .effectBefore{
+                            // z-index:99 !important;
+                        }
+        }       .leftDiv{
+                    // margin-top: 40px !important;
+                   p{
+                        font-size: 1.8vw;
+                        font-family: $fontLight;
+                        line-height: 2.1;
+                        margin-top: 10px !important;
+                        background: none;
+                        box-shadow: 10px 10px 100px #fff;
+                   }
+                    .rightArrowP{
+                        .rightArrowRight{
+                            position: absolute;
+                            display: inline-block;
+                            left: 20%;
+                            font-size: 14px;
+                            font-family: $fontBold;
+                            color: $danger;
+                            line-height: 1.6;
+                            transition: all .25s;
+                            width: 40%;
+                        }
+                    }
+                 }
+                 .rightULDiv{
+                    font-size: 1.6vw;
+                    font-family: $fontLight;
+                    background: #fff !important;
+                    box-shadow: 10px 10px 2000px lightgrey;
+                    margin-top: -40px;
+                    padding-top: 40px;
+                    li{
+                        i{
+                            color: $danger;
+                            font-size: 1.7vw;
+                            padding-right: 10px;
+                        }
+                        margin-top: -10px;
+                        :last-child{
+                            margin-bottom: 30px !important;
+                        }
+                    }
+                 }
+    }
+}
+
+
+@media screen and (max-width: 555px){
+    .strategy{
+        .row{
+                position: relative;
+                top: 0px !important;
+                h1{
+                    font-size: 7vw;
+                    font-weight: bold;
+                    font-family: $fontLight;
+                    top: 35px;
+                    position: relative;
+                    left: 30px;
+                }
+                .outsideDiv{
+                    overflow:hidden;
+                    box-shadow: 10px 10px 20000px lightgrey;
+                    // z-index: 99 !important;
+                    
+                }
+                        .effectBefore{
+                            // z-index:99 !important;
+                        }
+        }       .leftDiv{
+                    p{
+                        font-size: 2.6vw;
+                        font-family: $fontLight;
+                        line-height: 2.1;
+                        margin-top: 30px;
+                        background: none;
+                        box-shadow: 10px 10px 100px #fff;
+                    }
+                    .rightArrowP{
+                        .rightArrowRight{
+                            position: absolute;
+                            display: inline-block;
+                            left: 30%;
+                            font-size: 14px;
+                            font-family: $fontBold;
+                            color: $danger;
+                            line-height: 1.6;
+                            transition: all .25s;
+                            width: 50%;
+                        }
+                    }
+                 }
+                 .rightULDiv{
+                    font-size: 2.7vw;
+                    font-family: $fontLight;
+                    background: #fff !important;
+                    box-shadow: 10px 10px 2000px lightgrey;
+                    margin-top: -40px !important;
+                    padding-top: 40px;
+                    li{
+                        i{
+                            color: $danger;
+                            font-size: 1.8vw;
+                            padding-right: 10px;
+                        }
+                        margin-top: -10px;
+                        :last-child{
+                            margin-bottom: 30px !important;
+                        }
+                    }
+                 }
+    }
+}

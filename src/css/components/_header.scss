@@ -1,0 +1,99 @@
+@media screen and (max-width: 938px){
+    .insideHeading span{
+        font-size: 8vw;
+        font-weight: bold;
+        font-family: $fontBold;
+        color: $white;
+    }
+    .insideParagraph{
+        font-size: 4vw !important;
+        width: 80% !important;
+    }
+}
+.videoParent{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+
+    .Slidercontainer{
+        display: none;
+        .slider{
+            .slide{
+                img{
+                    width: 100vw;
+                    height: 100vh;
+                }
+            }
+        }
+    }
+    .headerVideos{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .insideVideo{
+        width: 40%;
+        height: 70%;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    .insideHeading{
+        font-size: 4vw;
+        font-weight: bold;
+        font-family: $fontBold;
+        color: $white;
+    }
+    .insideParagraph{
+        color: $white;
+        font-size: 1.6vw;
+        width: 50%;
+        font-family: $fontLight;
+    }
+    .insidebutton{
+        margin-top: 60px !important;
+        .headerButton{
+            bottom:0;
+            button{
+                background: none !important;
+                border: 1px solid rgba(255,255,255,.6);
+                color: $white;
+                border-radius: 0 !important;
+                height: 40px !important;
+                font-family: $fontLight;
+                position: relative;
+                z-index: 1;
+                &:after{
+                    position: absolute;
+                    height: 100%;
+                    width: 0px;
+                    background: $white;
+                    content: '';
+                    top:0;
+                    left:0;
+                    z-index: -1 !important;
+                    transition: all .35s;
+                }
+                &:hover{
+                    color: grey;
+                    &:after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .videoParent{
+        .Slidercontainer{
+            display: block;
+        }
+        .headerVideos{
+            display: none;
+        }
+        }
+}
